@@ -48,7 +48,7 @@
     <jacoco.skip.instrument>true</jacoco.skip.instrument>
     <awssdk.version>1.11.364</awssdk.version>
     <google.api.client.version>1.30.10</google.api.client.version>
-    <google.http.client.version>1.36.0</google.http.client.version>
+    <google.http.client.version>1.38.0</google.http.client.version>
     <jna.version>5.5.0</jna.version>
     <mockito.version>3.5.6</mockito.version>
     <shadeBase>net.snowflake.client.jdbc.internal</shadeBase>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>com.google.auth</groupId>
       <artifactId>google-auth-library-oauth2-http</artifactId>
-      <version>0.9.0</version>
+      <version>0.26.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.cloud</groupId>
@@ -567,7 +567,7 @@
              <timestampFormat>yyyyMMddHHmmss</timestampFormat>
              <timestampPropertyName>buildNumber.timestamp</timestampPropertyName>
              <doCheck>false</doCheck>
-             <revisionOnScmFailure />
+             <revisionOnScmFailure/>
              <doUpdate>false</doUpdate>
              <!--- Note for those who come later.  If you specify "buildNumber" in the items field, it becomes an incrememting buildNumber
                 AFAIK (and I spent a lot of time on this) it is impossible to get the SCM rev number and incrememting build number at the same time -->
@@ -767,7 +767,7 @@
                       </filter>
                    </filters>
                   <transformers>
-                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                     </transformer>
                   </transformers>
