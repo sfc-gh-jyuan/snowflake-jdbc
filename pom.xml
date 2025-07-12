@@ -37,12 +37,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <arrow.version>0.15.1</arrow.version>
+    <arrow.version>12.0.1</arrow.version>
     <slf4j.version>1.7.25</slf4j.version>
     <jsoup.version>1.11.3</jsoup.version>
     <tika.version>1.22</tika.version>
-    <jackson.version>2.11.0</jackson.version>
-    <jacksondatabind.version>2.11.0</jacksondatabind.version>
+    <jackson.version>2.15.0</jackson.version>
+    <jacksondatabind.version>2.15.0</jacksondatabind.version>
     <httpclient.version>4.5.13</httpclient.version>
     <jacoco.version>0.8.4</jacoco.version>
     <jacoco.skip.instrument>true</jacoco.skip.instrument>
@@ -76,7 +76,7 @@
     <dependency>
       <groupId>com.nimbusds</groupId>
       <artifactId>nimbus-jose-jwt</artifactId>
-      <version>8.0</version>
+      <version>10.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -289,7 +289,7 @@
     <dependency>
       <groupId>com.google.auth</groupId>
       <artifactId>google-auth-library-oauth2-http</artifactId>
-      <version>0.9.0</version>
+      <version>0.23.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.cloud</groupId>
@@ -569,7 +569,7 @@
              <timestampFormat>yyyyMMddHHmmss</timestampFormat>
              <timestampPropertyName>buildNumber.timestamp</timestampPropertyName>
              <doCheck>false</doCheck>
-             <revisionOnScmFailure />
+             <revisionOnScmFailure/>
              <doUpdate>false</doUpdate>
              <!--- Note for those who come later.  If you specify "buildNumber" in the items field, it becomes an incrememting buildNumber
                 AFAIK (and I spent a lot of time on this) it is impossible to get the SCM rev number and incrememting build number at the same time -->
@@ -771,7 +771,7 @@
                       </filter>
                    </filters>
                   <transformers>
-                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                     </transformer>
                   </transformers>
